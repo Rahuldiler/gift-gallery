@@ -1,0 +1,2244 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <title>Gift on Schedule</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="description" content="This is meta description">
+  <meta name="author" content="Themefisher">
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/Favicon.svg" type="image/x-icon">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="wallet" />
+
+  <!-- # Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- # CSS Plugins -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+  <link rel="stylesheet" href="plugins/font-awesome/brands.css">
+  <link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+  <!-- # Main Style Sheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+  <!-- navigation -->
+  <header class="navigation bg-tertiary">
+    <nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span
+            class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item"> <a class="nav-link" href="#">About Us</a>
+            </li>
+            <li class="nav-item "> <a class="nav-link" href="#">How it works?</a>
+            </li>
+
+            </li>
+            <li class="nav-item "> <a class="nav-link" href="$">Product-overview</a>
+            </li>
+            <li class="nav-item "> <a class="nav-link" href="#">Contact us</a>
+            </li>
+          </ul>
+          <!-- account btn --> <a href="#!" class="btn btn-outline-primary">Log In</a>
+          <!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3">Sign Up</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- /navigation -->
+
+
+  <div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom-0">
+          <h4 class="modal-title" id="exampleModalLabel">How much do you need?</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#!" method="post">
+            <div class="row">
+              <div class="col-lg-6 mb-4 pb-2">
+                <div class="form-group">
+                  <label for="loan_amount" class="form-label">Amount</label>
+                  <input type="number" class="form-control shadow-none" id="loan_amount" placeholder="ex: 25000">
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4 pb-2">
+                <div class="form-group">
+                  <label for="loan_how_long_for" class="form-label">How long for?</label>
+                  <input type="number" class="form-control shadow-none" id="loan_how_long_for" placeholder="ex: 12">
+                </div>
+              </div>
+              <div class="col-lg-12 mb-4 pb-2">
+                <div class="form-group">
+                  <label for="loan_repayment" class="form-label">Repayment</label>
+                  <input type="number" class="form-control shadow-none" id="loan_repayment" disabled>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4 pb-2">
+                <div class="form-group">
+                  <label for="loan_full_name" class="form-label">Full Name</label>
+                  <input type="text" class="form-control shadow-none" id="loan_full_name">
+                </div>
+              </div>
+              <div class="col-lg-6 mb-4 pb-2">
+                <div class="form-group">
+                  <label for="loan_email_address" class="form-label">Email address</label>
+                  <input type="email" class="form-control shadow-none" id="loan_email_address">
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-primary w-100">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="banner bg-tertiary position-relative overflow-hidden first-sec">
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <div class="block text-center text-lg-start pe-0 pe-xl-5">
+            <h1 class="mb-4">Automate your gifting
+              and <strong>never</strong> miss a
+              Birthday again!</h1>
+            <p class="mb-4">
+              <i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;No credit card required <br>
+              <i class="fa fa-check" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;No time limit
+            </p>
+
+            <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Start
+              Giftig For Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="ps-lg-5 text-center">
+            <img loading="lazy" decoding="async" src="images/1.png" alt="banner image" class="w-100">
+          </div>
+          <img loading="lazy" decoding="async" src="images/3.png" alt="banner image" class="w-100 ban-2img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-section section bg-tertiary position-relative overflow-hidden home-sec1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 mb-4">
+          <div class="section-title text-center main-title">
+            <h1>Say bye to the last min gifts.<br>
+              Say Hi! to Gift Automation Platform</h1>
+          </div>
+          <div class="col-lg-6 mb-4 btm-img dn_sec">
+            <img src="images/txt-btm.png">
+          </div>
+        </div>
+
+        <div class="col-lg-12 mob_view_top1">
+          <div class="bg_cl_mb">
+            <div class="col-lg-7 order text-center text-lg-end imgsce">
+              <img loading="lazy" decoding="async" src="images/s1_mob.png" alt="About Ourselves" class="img-fluid">
+            </div>
+            <div class="col-lg-5 order1">
+              <div class="section-title">
+                <h1>Birthdays and Anniversaries</h1>
+                <p class="mb-0 mt-4 head2">Never miss a birthday again and be the 1st to send your wishes and gifts
+                  every
+                  year on auto-pilot</p>
+                <ul class="p-line">
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Take care of all your birthdays and important events in one
+                    place!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;We'll find thoughtful gift with your setup budget for
+                    everyone
+                    on your list-no matter their tastes!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Set all your people up today and pay nothing until
+                    approximately 12 days before their Birthday!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;A surprise gift will arrive on time so you will never miss
+                    important day again</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-end imgsce desk_view_top1">
+          <img loading="lazy" decoding="async" src="images/s1.png" alt="About Ourselves" class="img-fluid">
+        </div>
+
+        <div class="col-lg-5 desk_view_top1">
+          <div class="section-title">
+
+            <h1>Birthdays and Anniversaries</h1>
+            <p class="mb-0 mt-4 head2">Never miss a birthday again and be the 1st to send your wishes and gifts
+              every
+              year on auto-pilot</p>
+            <ul class="p-line">
+              <li><img src="images/tick.png">&nbsp;&nbsp;Take care of all your birthdays and important events in one
+                place!</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;We'll find thoughtful gift with your setup budget for
+                everyone
+                on your list-no matter their tastes!</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Set all your people up today and pay nothing until
+                approximately 12 days before their Birthday!</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;A surprise gift will arrive on time so you will never miss
+                important day again</li>
+            </ul>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="about-section section bg-tertiary position-relative overflow-hidden home-sec1">
+    <div class="container">
+      <div class="row align-items-center">
+
+        <div class="col-lg-12 mob_view_top1">
+          <div class="bg_cl_mb_bt">
+            <div class="col-lg-7 order text-center text-lg-end imgsce">
+              <img loading="lazy" decoding="async" src="images/s2_mob_bg1.png" alt="About Ourselves" class="img-fluid">
+            </div>
+            <div class="col-lg-5 order1">
+              <div class="section-title">
+
+                <h1>Gift a moment they'll remember. We make you a better friend and relative</h1>
+
+                <ul class="p-line">
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Get the perfect gift for your loved ones without having to
+                    go
+                    through stores or websites</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;It's never been easier to connect with friends and family,
+                    we'll take care of everything from sending a perfect gift to create pre-crafted message for you to
+                    copy/paste/send on their special day!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;The Gift On Schedule Marketplace is full of uniquely
+                    curated
+                    gifts that are proven to leave an impression</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;All Gifts will be send on auto-pilot based on your settings
+                  </li>
+                </ul>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 desk_view_top1">
+          <div class="section-title">
+
+            <h1>Gift a moment they'll remember. We make you a better friend and relative</h1>
+
+            <ul class="p-line">
+              <li><img src="images/tick.png">&nbsp;&nbsp;Get the perfect gift for your loved ones without having to go
+                through stores or websites</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;It's never been easier to connect with friends and family,
+                we'll take care of everything from sending a perfect gift to create pre-crafted message for you to
+                copy/paste/send on their special day!</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;The Gift On Schedule Marketplace is full of uniquely curated
+                gifts that are proven to leave an impression</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;All Gifts will be send on auto-pilot based on your settings
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-lg-7 desk_view_top1 text-center text-lg-end imgsce">
+          <img loading="lazy" decoding="async" src="images/s2.png" alt="About Ourselves" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="about-section section bg-tertiary position-relative overflow-hidden home-sec1">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-12 mob_view_top1">
+          <div class="bg_cl_mb">
+            <div class="col-lg-7 order text-center text-lg-end imgsce">
+              <img loading="lazy" decoding="async" src="images/s3_bg1.png" alt="About Ourselves" class="img-fluid">
+            </div>
+            <div class="col-lg-5 order1">
+              <div class="section-title">
+                <h1>Remember those special days</h1>
+             
+                <ul class="p-line">
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Take care of all your birthdays and important events in one
+                    place!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;We'll find thoughtful gift with your setup budget for
+                    everyone
+                    on your list-no matter their tastes!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Set all your people up today and pay nothing until
+                    approximately 12 days before their Birthday!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;A surprise gift will arrive on time so you will never miss
+                    important day again</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7 text-center text-lg-end imgsce desk_view_top1">
+          <img loading="lazy" decoding="async" src="images/s3.png" alt="About Ourselves" class="img-fluid">
+        </div>
+
+        <div class="col-lg-5 desk_view_top1">
+          <div class="section-title">
+
+            <h1>Remember those special days</h1>
+
+            <ul class="p-line">
+              <li><img src="images/tick.png">&nbsp;&nbsp;Customize your unlimited reminders, down to the day, time, and
+                frequency</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Sync Gift On Schedule with contacts and calendar for maximum
+                coverage</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Don’t let us limit the days you celebrate. Add any days that
+                are special to you</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Get reminders on your phone or email</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;View all your upcoming celebrations in a single, chronological
+                list.</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Automate gifts for recurring celebrations like birthdays and
+                work anniversaries</li>
+            </ul>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </section>
+
+
+  <section class="about-section section bg-tertiary position-relative overflow-hidden home-sec1">
+    <div class="container">
+      <div class="row align-items-center">
+
+
+        <div class="col-lg-12 mob_view_top1">
+          <div class="bg_cl_mb_bt">
+            <div class="col-lg-7 order text-center text-lg-end imgsce">
+              <img loading="lazy" decoding="async" src="images/s4mob.png" alt="About Ourselves" class="img-fluid">
+              <br>
+              <a type="button" class="btn btn-primary mt-2" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Start
+                Gifting for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a>
+            </div>
+            <div class="col-lg-5 order1">
+              <div class="section-title">
+                <h1>Sit back and watch the results roll in</h1>
+                <ul class="p-line">
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Gift On Schedule Platform allows you to send the right
+                    gift, to
+                    the right person, at the right time</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Curate and send gift collections to recipients—no delivery
+                    address needed!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Save hundreds of hours and dollars each month!</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Timely delivery guaranteed across 100 countries</li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;Free and Easy. There are no hidden cost to use the service.
+                  </li>
+                  <li><img src="images/tick.png">&nbsp;&nbsp;We only charge you for the price of the gift you selected.
+                  </li>
+                </ul>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 desk_view_top1">
+          <div class="section-title">
+
+            <h1>Sit back and watch the results roll in</h1>
+
+            <ul class="p-line">
+              <li><img src="images/tick.png">&nbsp;&nbsp;Gift On Schedule Platform allows you to send the right gift, to
+                the right person, at the right time</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Curate and send gift collections to recipients—no delivery
+                address needed!</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Save hundreds of hours and dollars each month!</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Timely delivery guaranteed across 100 countries</li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;Free and Easy. There are no hidden cost to use the service.
+              </li>
+              <li><img src="images/tick.png">&nbsp;&nbsp;We only charge you for the price of the gift you selected.</li>
+            </ul>
+            <br><br>
+            <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Start
+              Gifting for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a>
+
+          </div>
+        </div>
+
+        <div class="col-lg-7 desk_view_top1 text-center text-lg-end imgsce">
+          <img loading="lazy" decoding="async" src="images/s4.png" alt="About Ourselves" class="img-fluid">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section prod-sec">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h1>The Gift On Schedule Marketplace is full of uniquely curated gifts that are proven to leave an
+              impression.</h1>
+          </div>
+        </div>
+
+        <div class="col-lg-12 position-relative prod-list">
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/prd4.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Flower Gift Basket<br>
+                  Price $55-$325</h4>
+                <div class="rating">
+                  5.0&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;11 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/prd3.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Cakes<br>
+                  Price $70-$270</h4>
+                <div class="rating">
+                  4.7&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;9 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/prd2.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Luxury Roses<br>
+                  Price $35-$340</h4>
+                <div class="rating">
+                  4.8&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;10 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/prd1.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Teddy Bear<br>
+                  Price $65-$315</h4>
+                <div class="rating">
+                  5.0&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/5.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Chocolate Gifts<br>Price $45-$310</h4>
+                <div class="rating">
+                  4.9&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;9 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/6.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Preserve Roses<br>
+                  Price $55-$325</h4>
+                <div class="rating">
+                  4.6&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;4 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/7.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Jewelry <br>Price $50-$390</h4>
+                <div class="rating">
+                  5.0&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/8.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Wine Basket <br>Price $25-$225</h4>
+                <div class="rating">
+                  4.9&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;18 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/9.png">
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Baked Goods<br>Price $55-$325</h4>
+                <div class="rating">
+                  4.9&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/10.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Candles Gift Set<br>Price $15-$395</h4>
+                <div class="rating">
+                  5.0&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;11 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/11.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Dried Fruit Basket<br>Price $80-$160</h4>
+                <div class="rating">
+                  4.8&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;7 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/12.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Spa Baskets<br>Price $55-$325</h4>
+                <div class="rating">
+                  4.6&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;8 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/13.png">
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Birthday Flowers<br>Price $20-$300</h4>
+                <div class="rating">
+                  4.9&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;7 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/14.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Plants<br>Price $35-$275</h4>
+                <div class="rating">
+                  4.8&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;12 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/16.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Fruit Basket <br>Price $20-$235</h4>
+                <div class="rating">
+                  5.0&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;16 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-6">
+            <div class="shadow rounded">
+              <div class="d-block d-sm-flex align-items-center product_img_wrap">
+                <img loading="lazy" decoding="async" src="images/prod/17.png">
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">Major Gift Cards<br>Price $45-$300</h4>
+                <div class="rating">
+                  4.9&nbsp; <div class="Stars" style="--rating: 4.9;"
+                    aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;7 Reviews
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--<div class="col-lg-3">
+        <div class="shadow rounded">
+          <div class="d-block d-sm-flex align-items-center mb-3">
+            <img loading="lazy" decoding="async"
+              src="images/prod/18.png">
+            
+          </div>
+          <div class="content">
+            <h4 class="h5 mb-1">Gift Basket <br>Price $55-$325</h4>
+               <div class="rating">
+              4.9&nbsp; <div class="Stars" style="--rating: 4.9;" aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="shadow rounded">
+          <div class="d-block d-sm-flex align-items-center mb-3">
+            <img loading="lazy" decoding="async"
+              src="images/prod/19.png">
+            
+          </div>
+          <div class="content">
+            <h4 class="h5 mb-1">Artificial Flowers<br>Price $55-$325</h4>
+               <div class="rating">
+              4.9&nbsp; <div class="Stars" style="--rating: 4.9;" aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="shadow rounded">
+          <div class="d-block d-sm-flex align-items-center mb-3">
+            <img loading="lazy" decoding="async"
+              src="images/prod/20.png">
+            
+          </div>
+          <div class="content">
+            <h4 class="h5 mb-1">Home Decor<br>Price $55-$325</h4>
+               <div class="rating">
+              4.9&nbsp; <div class="Stars" style="--rating: 4.9;" aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+            </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="shadow rounded">
+          <div class="d-block d-sm-flex align-items-center mb-3">
+            <img loading="lazy" decoding="async"
+              src="images/prod/15.png">
+            
+          </div>
+          <div class="content">
+            <h4 class="h5 mb-1">CHOCOLATE COVERED STRAWBERRIES DELIVERY<br>Price $55-$325</h4>
+               <div class="rating">
+              4.9&nbsp; <div class="Stars" style="--rating: 4.9;" aria-label="Rating of this product is 2.3 out of 5."></div>&nbsp;13 Reviews
+            </div>
+            </div>
+        </div>
+      </div>-->
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section how-work advantages">
+    <div class="container">
+      <div class="row align-items-center gx-0">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h1>How it works?</h1>
+            <img src="images/txt-btm.png" class="btmimg">
+          </div>
+        </div>
+        <div class="advantages__content">
+
+          <div class="col-lg-12 all-hwk all-hwk_mob hwk1 advantages__item">
+            <div class="advantages_center">
+              <div class="col-lg-6 hwks Fhwks">
+                <div>
+                  <h4 class="lsubh1">Quick Gift</h4>
+                  <p class="hk1p">How Quick Gift Works:<br> Effortless Gifting in Three <br>Steps.</p>
+                  <div class="susect">
+                    <div class="col-lg-5 lhs-6">
+                      <div class="sec-sl_title">
+                        <h5>1.</h5>&nbsp; &nbsp; <h5>Select Recipient:</h5>
+                      </div>
+                      <p class="top-p">Choose who you want to delight with a gift.</p>
+                      <div class="sec-sl_title mt-5">
+                        <h5>2.</h5>&nbsp; &nbsp; <h5>Choose Gift:</h5>
+                      </div>
+                      <p class="top-p">Pick the perfect present from our curated collection.</p>
+                    </div>
+                    <div class="col-lg-7 text-lg-end">
+                      <img src="images/p1.png">
+                    </div>
+                  </div>
+                  <div class="susect">
+                    <div class="col-lg-6 lhs-6">
+                      <div class="sec-sl_title btm-h5">
+                        <h5>3.</h5>&nbsp; &nbsp; <h5>Schedule Delivery:</h5>
+                      </div>
+                      <p class="top-p">Set the date, and we'll ensure it arrives on time.</p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                      <img src="images/18.png">
+                    </div>
+                  </div>
+                  <div class="susect">
+                    <div class="col-lg-6 lhs-6">
+                      <p class="sec-btm">With Quick Gift, thoughtful surprises are just a few clicks away.</p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                    </div>
+                  </div>
+                  <div class="susect_mob">
+                    <div class="sec-sl_title">
+                      <h5>1.</h5>&nbsp; &nbsp; <h5>Select Recipient:</h5>
+                    </div>
+                    <p class="top-p">Choose who you want to delight with a gift.</p>
+                    <div class="sec-sl_title">
+                      <h5>2.</h5>&nbsp; &nbsp; <h5>Choose Gift:</h5>
+                    </div>
+                    <p class="top-p">Pick the perfect present from our curated collection.</p>
+                    <img src="images/p1.png">
+                    <div class="sec-sl_title btm-h5">
+                      <h5>3.</h5>&nbsp; &nbsp; <h5>Schedule Delivery:</h5>
+                    </div>
+                    <p class="top-p">Set the date, and we'll ensure it arrives on time.</p>
+                    <img src="images/18.png">
+                    <p class="sec-btm">With Quick Gift, thoughtful surprises are just a few clicks away.</p>
+                    <button type="button" class="btn btm_button" href="#" data-bs-toggle="modal"
+                      data-bs-target="#applyLoan">
+                      Start Quick Gift for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+                    </button>
+                    <a class="btm_link" href="javascript:void(0);">Quick Gift Overview </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 hwks Shwks">
+                <div>
+                  <div class="section-title">
+                    <h1>Quick Gift: Perfect for <br> Those On the Go.</h1>
+                  </div>
+                  <p class="subh1">Send heartfelt presents without delay</p>
+                  <!--<p class="subh2">Quick Gift</p>-->
+                  <p>Designed for busy individuals who value meaningful gestures, Quick Gift offers a swift and
+                    convenient
+                    way to send heartfelt presents. Whether you're a professional juggling work commitments or a parent
+                    with
+                    a packed schedule, Quick Gift ensures you never miss a special occasion. With its straightforward
+                    process, you can effortlessly spread joy to your loved ones, making every moment count, even amidst
+                    your
+                    busy life.</p>
+                  <br class="d_mob">
+                  <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal"
+                    data-bs-target="#applyLoan">Start
+                    Quick Gift for Free<span style="font-size: 14px;"
+                      class="ms-2 fas fa-arrow-right"></span></a><br><br>
+
+                  <a class="qucki-rv-link" href="javascript:void(0);">Quick Gift Overview </a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 all-hwk all-hwk_mob hwk2 advantages__item">
+            <div class="advantages_center">
+              <div class="col-lg-6 hwks Fhwks">
+                <div>
+                  <h4 class="lsubh1">Gift by Link</h4>
+                  <p class="hk1p">How it works?</p>
+                  <div class="susect">
+                    <div class="col-lg-6 lhs-6 lhs-7">
+                      <div class="sec-sl_title">
+                        <h5>1.</h5>&nbsp; &nbsp; <h5>Send digitally</h5>
+                      </div>
+                      <p class="top-p">By email/text, or simply copy- paste the link anywhere. Serious, no address
+                        needed.
+                      </p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end rhns-1">
+                      <img src="images/9.png">
+                    </div>
+                  </div>
+                  <div class="susect">
+                    <div class="col-lg-6 lhs-6">
+                      <div class="sec-sl_title">
+                        <h5>2.</h5>&nbsp; &nbsp; <h5>They choose</h5>
+                      </div>
+                      <p class="top-p">Recipient gets a chance to swap the gift if they prefer something else.</p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                      <img src="images/slisc2.png">
+                    </div>
+                  </div>
+                  <div class="susect">
+                    <div class="col-lg-6 lhs-6">
+                      <div class="sec-sl_title">
+                        <h5>3.</h5>&nbsp; &nbsp; <h5>We deliver</h5>
+                      </div>
+                      <p class="top-p">Trust us to pack, wrap and deliver your gift in the way you would.</p>
+                    </div>
+                    <div class="col-lg-6 text-lg-end">
+                      <img src="images/16.png">
+                    </div>
+                  </div>
+
+                  <div class="susect_mob">
+                    <div class="sec-sl_title">
+                      <h5>1.</h5>&nbsp; &nbsp; <h5>Send digitally</h5>
+                    </div>
+                    <p class="top-p">By email/text, or simply copy- paste the link anywhere. Serious, no address needed.
+                    </p>
+                    <img src="images/9.png">
+                    <div class="sec-sl_title">
+                      <h5>2.</h5>&nbsp; &nbsp; <h5>They choose</h5>
+                    </div>
+                    <p class="top-p">Recipient gets a chance to swap the gift if they prefer something else.</p>
+                    <img src="images/slisc2.png">
+                    <button type="button" class="btn btm_button" href="#" data-bs-toggle="modal"
+                      data-bs-target="#applyLoan">
+                      Start Quick Gift for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+                    </button>
+                    <a class="btm_link" href="javascript:void(0);">Quick Gift Overview </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 hwks Shwks">
+                <div>
+                  <div class="section-title">
+                    <h1>Gift on Schedule will <br> help you</h1>
+                  </div>
+                  <p class="subh1">To give the recipient the opportunity to choose a gift according to their taste</p>
+                  <p class="subh2">Gift by Link</p>
+
+                  <p>The "Gift by Link" feature allows individuals to generate a personalized link through which they
+                    can
+                    select their own gift and specify the desired delivery date. With this feature, users can curate
+                    their
+                    own gift experience and have the flexibility to choose a present that perfectly suits their
+                    preferences
+                    and schedule.</p>
+                  <br>
+                  <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal"
+                    data-bs-target="#applyLoan">Start
+                    Gift by Link for Free<span style="font-size: 14px;"
+                      class="ms-2 fas fa-arrow-right"></span></a><br><br>
+
+                  <a class="qucki-rv-link" href="javascript:void(0);">Gift by Link Overview</a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 all-hwk all-hwk_mob hwk3 advantages__item">
+            <div class="advantages_center">
+              <div class="col-lg-6 hwks Fhwks">
+                <div>
+                  <div class="col-lg-6">
+                    <div class="col-12 hm_mp_top">
+                      <h4 class="lsubh1">Autopilot</h4>
+                      <h6 class="hk1p w-100">How Autopilot Works: Effortless Gifting, Always on Time.</h6>
+                      <div class="sec-sl_title lhs-8">
+                        <h5>1.</h5>&nbsp; &nbsp; <h5>Schedule Occasions: </h5>
+                      </div>
+                      <p class="top-p">Input important dates and occasions in advance.</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 text-lg-end">
+                    <img src="images/15.png">
+                  </div>
+                  <div style="clear:both;"></div>
+                  <div class="col-lg-6 hm_mn_top">
+                    <div class="sec-sl_title lhs-7">
+                      <h5>2.</h5>&nbsp; &nbsp; <h5>Set Budget:</h5>
+                    </div>
+                    <p class="top-p">Choose your desired budget for each occasion.</p>
+                  </div>
+                  <div class="col-lg-6 text-lg-end">
+                    <img src="images/12.png">
+                  </div>
+                  <div style="clear:both;"></div>
+                  <div class="col-lg-6 hm_neg_top">
+                    <div class="sec-sl_title">
+                      <h5>3.</h5>&nbsp; &nbsp; <h5>Perfect Gifts Prepared:</h5>
+                    </div>
+                    <p class="top-p">Autopilot curates thoughtful gifts within your budget and ensures timely
+                      deliveries,
+                      7
+                      days before the occasion.</p>
+                  </div>
+                  <div class="col-lg-6 text-lg-end">
+                    <img src="images/10.png">
+                  </div>
+                  <div class="col-lg-6 hm_neg_top_2">
+                    <p class="sec-btm">With Autopilot, thoughtful gestures are automated, ensuring you never miss a
+                      moment
+                      to celebrate.</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-lg-6 hwks Shwks">
+                <div>
+                  <div class="section-title">
+                    <h1>Autopilot: Gifting Made Effortless, Every Time</h1>
+                  </div>
+                  <p class="subh1">Set up an automatic gifting</p>
+                  <!--<p class="subh2">Autopilot</p>-->
+
+                  <p>Crafted for the busy and the meticulous, Autopilot is the ultimate solution for those who never
+                    want
+                    to
+                    miss an important occasion again. If you're a professional with a packed schedule or someone who
+                    wants
+                    to ensure seamless and timely gifting, Autopilot is your ideal companion.</p>
+
+                  <p>The main benefit? Simplifying your life. Set your occasions and budget, and let Autopilot handle
+                    the
+                    rest. Curating perfect gifts within your budget, it ensures they're prepared and delivered precisely
+                    when they should be, taking the stress out of gifting. Celebrate without worry with Autopilot by
+                    your
+                    side.</p>
+                  <br>
+                  <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal"
+                    data-bs-target="#applyLoan">Start
+                    Autopilot for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a><br><br>
+
+                  <a class="qucki-rv-link" href="javascript:void(0);">Autopilot Overview </a>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-12 all-hwk all-hwk_mob hwk4 advantages__item">
+            <div class="advantages_center">
+              <div class="col-lg-6 hwks Fhwks">
+                <div>
+                  <div class="col-lg-6">
+                    <h4 class="lsubh1">Campaign / Bulk Gifting </h4>
+                    <h6 class="hk1p">Streamlining Your Bulk Gifting Strategy</h6>
+
+                    <div class="col-l2 hm_mp_top">
+                      <div class="sec-sl_title lhs-7">
+                        <h5>1.</h5>&nbsp; &nbsp; <h5>Group Celebrations Made Easy:</h5>
+                      </div>
+                      <p class="top-p">Whether it's festive family reunions or corporate appreciations, set up gifting
+                        campaigns effortlessly. Select your recipients and provide their details seamlessly.</p>
+                    </div>
+
+                  </div>
+                  <div class="col-lg-6 text-lg-end lhs-6">
+                    <img src="images/17.png">
+                  </div>
+
+                  <div style="clear:both;"></div>
+                  <div class="col-lg-6 hm_mp_top">
+                    <div class="sec-sl_title">
+                      <h5>2.</h5>&nbsp; &nbsp; <h5>Choose Your Gifting Style:</h5>
+                    </div>
+                    <p class="top-p">If you have their addresses, go for the classic route with traditional delivery. No
+                      addresses available? No problem at all. Generate distinct gift links and share them digitally.
+                      Once
+                      your recipients receive the link, they can simply click on it and provide their accurate
+                      information
+                      to receive the physical gift.</p>
+                  </div>
+                  <div class="col-lg-6 text-lg-end">
+                    <img src="images/13.png">
+                  </div>
+
+                  <div style="clear:both;"></div>
+                  <div class="col-lg-6 hm_nm_top">
+                    <div class="sec-sl_title">
+                      <h5>3.</h5>&nbsp; &nbsp; <h5>Our Pledge for On-Time Delivery:</h5>
+                    </div>
+                    <p class="top-p">Trust us with the packing, wrapping, and delivery process, ensuring your gifts
+                      reach
+                      their intended recipients as planned.</p>
+                  </div>
+                  <div class="col-lg-6 text-lg-end">
+                    <img src="images/14.png">
+                  </div>
+                  <div class="col-lg-6 hm_neg_top_3">
+                    <p class="sec-btm">Campaign Gifting simplifies bulk gifting, catering to the needs of both
+                      individuals
+                      and businesses.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6 hwks Shwks">
+                <div>
+                  <div class="section-title">
+                    <h1>Bulk Gifting: Sharing Joy, in mass</h1>
+                  </div>
+                  <!--<p class="subh1">To congratulate a group of people</p>
+          <p class="subh2">Gift Campaign / Bulk Gifting</p>-->
+
+                  <p>Tailored for businesses, event organizers, and anyone wanting to make a collective impact, Bulk
+                    Gifting
+                    is your ultimate solution. Perfect for sending tokens of appreciation, acknowledging milestones, or
+                    spreading holiday cheer to a large audience.</p>
+
+                  <p>The main benefit? Efficiency. With just a few clicks, you can create and execute a comprehensive
+                    gifting campaign, reaching multiple recipients seamlessly. It's the ideal way to strengthen
+                    relationships, all while saving time and ensuring a personal touch in each gift. Make a grand
+                    gesture
+                    with ease through Gift On Schedule's Bulk Gifting.</p>
+
+                  <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal"
+                    data-bs-target="#applyLoan">Start
+                    Campaign for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a><br><br>
+
+                  <a class="qucki-rv-link" href="javascript:void(0);">Gift Campaign Overview </a><br><br>
+
+                  <a class="qucki-rv-link" href="javascript:void(0);">Bulk Gift Link Generator Overview </a>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="how_work_wrapper">
+    <div class="container">
+      <div class="qck_gift">
+        <div class="top_sec_mob">
+          <h4>Quick Gift: Perfect for<br>Those On the Go.</h4>
+          <p class="qck_p">Send heartfelt presents without delay</p>
+          <span>
+            Designed for busy individuals who value meaningful gestures, Quick Gift offers a swift and
+            convenient
+            way to send heartfelt presents. Whether you're a professional juggling work commitments or a parent
+            with
+            a packed schedule, Quick Gift ensures you never miss a special occasion. With its straightforward
+            process, you can effortlessly spread joy to your loved ones, making every moment count, even amidst
+            your
+            busy life.
+          </span>
+        </div>
+        <div class="susect_mob">
+          <h4>Quick Gift</h4>
+          <p class="qck_p">How Quick Gift Works: <br>Effortless Gifting in Three <br>Steps.</p>
+          <div class="sec-sl_title">
+            <h5>1.</h5>&nbsp; &nbsp; <h5>Select Recipient:</h5>
+          </div>
+          <p class="top-p">Choose who you want to delight with a gift.</p>
+          <div class="sec-sl_title">
+            <h5>2.</h5>&nbsp; &nbsp; <h5>Choose Gift:</h5>
+          </div>
+          <p class="top-p">Pick the perfect present from our curated collection.</p>
+          <img src="images/p1.png">
+          <div class="sec-sl_title btm-h5">
+            <h5>3.</h5>&nbsp; &nbsp; <h5>Schedule Delivery:</h5>
+          </div>
+          <p class="top-p">Set the date, and we'll ensure it arrives on time.</p>
+          <img src="images/18.png">
+          <p class="sec_btm">With Quick Gift, thoughtful <br>surprises are just a few <br> clicks away.</p>
+          <button type="button" class="btn btm_button" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">
+            Start Quick Gift for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+          </button>
+          <a class="btm_link" href="javascript:void(0);">Quick Gift Overview </a>
+        </div>
+      </div>
+      <div class="qck_gift">
+        <div class="top_sec_mob">
+          <h4>Gift on Schedule will <br> help you</h4>
+          <p class="qck_p">To give the recipient the <br> opportunity to choose a gift <br> according to their taste</p>
+          <span>
+            The "Gift by Link" feature allows individuals to generate a personalized link through which they
+            can
+            select their own gift and specify the desired delivery date. With this feature, users can curate
+            their
+            own gift experience and have the flexibility to choose a present that perfectly suits their
+            preferences
+            and schedule.
+          </span>
+        </div>
+        <div class="susect_mob">
+          <h4>Gift By Link</h4>
+          <div class="sec-sl_title">
+            <h5>1.</h5>&nbsp; &nbsp; <h5>Send digitally</h5>
+          </div>
+          <p class="top-p">By email/text, or simply copy- paste the link anywhere. Serious, no address needed.</p>
+          <img src="images/9.png">
+          <div class="sec-sl_title">
+            <h5>2.</h5>&nbsp; &nbsp; <h5>They choose</h5>
+          </div>
+          <p class="top-p">Recipient gets a chance to swap the gift if they prefer something else.</p>
+          <img src="images/slisc2.png">
+          <div class="sec-sl_title btm-h5">
+            <h5>3.</h5>&nbsp; &nbsp; <h5>We Delivery</h5>
+          </div>
+          <p class="top-p">Trust us to pack, wrap and deliver your gift in the way you would.</p>
+          <img src="images/16.png">
+          <button type="button" class="btn btm_button" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">
+            Start Quick Gift for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+          </button>
+          <a class="btm_link" href="javascript:void(0);">Quick Gift Overview </a>
+        </div>
+      </div>
+      <div class="qck_gift">
+        <div class="top_sec_mob">
+          <h4>Autopilot: Gifting Made <br>Effortless, Every Time</h4>
+          <p class="qck_p">Set up an automatic gifting</p>
+          <span>
+            Crafted for the busy and the meticulous, Autopilot is the ultimate solution for those who never want to miss
+            an
+            important occasion again. If you're a professional with a packed schedule or someone who wants to ensure
+            seamless and
+            timely gifting, Autopilot is your ideal companion.
+          </span>
+          <span class="mt-2">
+            The main benefit? Simplifying your life. Set your occasions and budget, and let Autopilot handle the rest.
+            Curating
+            perfect gifts within your budget, it ensures they're prepared and delivered precisely when they should be,
+            taking the
+            stress out of gifting. Celebrate without worry with Autopilot by your side.
+          </span>
+        </div>
+        <div class="susect_mob">
+          <h4>Autopilot</h4>
+          <p class="qck_p">How Autopilot Works: <br> Effortless Gifting, Always on<br> Time.</p>
+          <div class="sec-sl_title">
+            <h5>1.</h5>&nbsp; &nbsp; <h5>Schedule Occasions:</h5>
+          </div>
+          <p class="top-p">CInput important dates and occasions in advance.</p>
+          <img src="images/15.png">
+          <div class="sec-sl_title">
+            <h5>2.</h5>&nbsp; &nbsp; <h5>Set Budget:</h5>
+          </div>
+          <p class="top-p">Choose your desired budget for each occasion.</p>
+          <img src="images/12.png">
+          <div class="sec-sl_title btm-h5">
+            <h5>3.</h5>&nbsp; &nbsp; <h5>Perfect Gifts Prepared:</h5>
+          </div>
+          <p class="top-p">Autopilot curates thoughtful gifts within your budget and ensures timely deliveries, 7 days
+            before the occasion.</p>
+          <img src="images/10.png">
+          <p class="sec_btm">With Autopilot, thoughtful gestures are automated, ensuring you never miss a moment to
+            celebrate.</p>
+          <button type="button" class="btn btm_button" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">
+            Start Quick Gift for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span>
+          </button>
+          <a class="btm_link" href="javascript:void(0);">Quick Gift Overview </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section review-sec">
+    <div class="container">
+      <div class="row align-items-center justify-content-between">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h1>Client feedbacks</h1>
+          </div>
+        </div>
+
+        <div class="col-lg-12 position-relative">
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/1.png">
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars2" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/2.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars2" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/7.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars1" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/8.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars1" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/9.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+
+                <div class="rating">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/10.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars2" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/11.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars1" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/12.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+
+                <div class="rating">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/4.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars2" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/5.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+                <div class="rating">
+                  <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/6.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+
+                <div class="rating">
+                  <div class="Stars2" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="shadow rounded p-4 mt-4">
+              <div class="d-block d-sm-flex align-items-center mb-3">
+                <img loading="lazy" decoding="async" src="images/client/3.png">
+
+              </div>
+              <div class="content">
+                <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+                <p class="uname"> Name: Test Name</p>
+
+                <div class="rating">
+                  <div class="Stars1" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="testimonial_mob_wrapper">
+    <div class="container">
+      <div class="section-title">
+        <h1>Client feedbacks</h1>
+        <img src="images/txt-btm.png" class="btmimg">
+      </div>
+      <div class="control_buttons">
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <i class='fas fa-arrow-left'></i></button>
+        </a>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <i class='fas fa-arrow-right'></i></button>
+        </a>
+
+      </div>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-item active">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/1.png">
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/6.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/10.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/11.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/12.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/6.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/7.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="shadow rounded p-4 mt-4">
+            <div class="d-block d-sm-flex align-items-center mb-3">
+              <img loading="lazy" decoding="async" src="images/client/4.png">
+
+            </div>
+            <div class="content">
+              <h4 class="h5 mb-1">“Insert testimonials here.Insert testimonials here.Insert testimonials here”</h4>
+              <p class="uname"> Name: Test Name</p>
+
+              <div class="rating">
+                <div class="Stars" style="--rating: 4.5;" aria-label="Rating of this product is 2.3 out of 5."></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section faq-sec">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12">
+          <div class="section-title text-center mb-5 pb-2">
+            <h1>Frequently Asked Questions</h1>
+            <p class="text-primary text-uppercase fw-bold mb-3">Review the most commonly asked questions below.</p>
+          </div>
+        </div>
+        <div class="accordion  bg-white position-relative" id="accordionFAQ">
+          <div class="col-lg-6">
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 active"
+                id="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" aria-expanded="true"
+                aria-controls="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9">How does Gift On Schedule work?</h2>
+              <div id="collapse-ebd23e34fd2ed58299b32c03c521feb0b02f19d9"
+                class="accordion-collapse collapse border-0 show"
+                aria-labelledby="heading-ebd23e34fd2ed58299b32c03c521feb0b02f19d9" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Gift On Schedule is an innovative web application that allows
+                  you to schedule gifts ahead of time. You can choose recipients, select thoughtful gifts, and provide
+                  necessary information about the recipients. The system ensures that the gifts are delivered on the
+                  selected date, so you never miss an important occasion again.</div>
+              </div>
+            </div>
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" aria-expanded="false"
+                aria-controls="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1">What is the purpose of the Quick Gift
+                function?</h2>
+              <div id="collapse-a443e01b4db47b3f4a1267e10594576d52730ec1" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-a443e01b4db47b3f4a1267e10594576d52730ec1" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">The Quick Gift function is designed to simplify the gift-giving
+                  process. With just a few clicks, you can select a recipient, choose a gift, and provide their
+                  information to schedule the gift's delivery. It ensures that you can effortlessly send meaningful
+                  gifts without any hassle.</div>
+              </div>
+            </div>
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd">How does the Send by Link feature
+                function?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">The Send by Link feature is perfect for situations when you
+                  don't have the recipient's shipping address. It allows you to generate a unique gift link and send it
+                  via SMS, email, or any other preferred method. The recipient will click on the link and provide their
+                  details to receive the gift.</div>
+              </div>
+            </div>
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd1" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd1">What is Autopilot, and how does it
+                simplify the gifting process?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd1" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd1" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Autopilot is a time-saving feature that automates your gifting
+                  experience. You can schedule important dates and occasions in advance, and the system will choose the
+                  perfect gift within your budget. The gifts will be prepared and sent automatically, saving you time
+                  and effort.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd2" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd2">Can I schedule gifts for future
+                occasions using Gift On Schedule?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd2" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd2" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Absolutely! Gift On Schedule allows you to plan and schedule
+                  gifts for future occasions, ensuring your loved ones receive their gifts on time and with
+                  thoughtfulness.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd3" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd3">Is Gift On Schedule suitable for both
+                personal and business gifting needs?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd3" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd3" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Yes, Gift On Schedule caters to both personal and business
+                  gifting needs. Whether you want to surprise family and friends or send gifts to clients and employees,
+                  our platform has you covered.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd4" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd4">How does the Gift Campaign feature
+                facilitate bulk gifting?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd4" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd4" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">The Gift Campaign feature enables you to send the same
+                  thoughtful gift to multiple recipients with ease. You can create a campaign, select recipients in
+                  bulk, and choose a budget-friendly gift. The system generates individual gift links for each
+                  recipient, allowing you to send them personally via SMS, email, or other methods.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd5" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd5" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd5">Can I send gifts to recipients
+                without knowing their shipping addresses?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd5" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd5" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Yes, you can! The Gift by Link feature allows you to send
+                  personalized gift links directly to recipients, bypassing the need for shipping addresses. You can
+                  send the links via various communication channels.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd6" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd6" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd6">Is Gift On Schedule completely free
+                to use?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd6" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd6" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Yes, Gift On Schedule is absolutely free to use. You only pay
+                  for the gifts you select to send. We accept all major credit cards, making it easy and convenient for
+                  you to pay for the gifts you choose.</div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="col-lg-6">
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" aria-expanded="false"
+                aria-controls="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3">Can I personalize the gifts I send
+                through Gift On Schedule?</h2>
+              <div id="collapse-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-3e13e9676a9cd6a6f8bfbe6e1e9fc0881ef247b3" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Absolutely! You can personalize the gifts you send by selecting
+                  from a variety of options available within the platform. Make your gifts unique and special for your
+                  recipients.</div>
+              </div>
+            </div>
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-0c2f829793a1f0562fea97120357dd2d43319164" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-0c2f829793a1f0562fea97120357dd2d43319164" aria-expanded="false"
+                aria-controls="collapse-0c2f829793a1f0562fea97120357dd2d43319164">Is there a limit to the number of
+                recipients I can include in a Gift Campaign?</h2>
+              <div id="collapse-0c2f829793a1f0562fea97120357dd2d43319164" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-0c2f829793a1f0562fea97120357dd2d43319164" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">There is no strict limit to the number of recipients you can
+                  include in a Gift Campaign. The system is designed to accommodate bulk gifting, making it suitable for
+                  various gifting scenarios.</div>
+              </div>
+            </div>
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f518" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f518" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f518">What happens if a recipient does not
+                redeem their gift link?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa075f518" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f518" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">If a recipient does not redeem their gift link, you will not be
+                  charged. You only pay for the gifts that are actually redeemed, ensuring you get the most value out of
+                  your gifting efforts.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f5181" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f5181" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f5181">How does Gift On Schedule ensure that
+                the chosen gifts fit within my budget?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa075f5181" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f5181" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">When using Autopilot or the Gift Campaign feature, you set the
+                  budget for the gifts. The system then chooses gifts that align with the budget you have specified.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f5182" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f5182" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f5182">How far in advance can I schedule a
+                gift?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa075f5182" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f5182" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">With Gift On Schedule, you can plan ahead and schedule gifts up
+                  to 1 year in advance. Whether it's for a birthday, anniversary, or any special occasion, rest assured
+                  that your thoughtful gift will be delivered right on time, as per your chosen schedule.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f5183" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f5183" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f5183">Will I get a reminder of a scheduled
+                gift?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa075f5183" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f5183" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Yes, Gift On Schedule ensures you stay informed about your
+                  scheduled gifts. After completing the checkout process, you will receive an initial confirmation of
+                  the scheduled gift. Additionally, to avoid any last-minute surprises, you will receive another
+                  reminder the day before the scheduled gift date. Rest assured, we want to make sure you never miss the
+                  opportunity to celebrate your special occasions with your thoughtful gifts.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f5184" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f5184" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f5184">What if I want to change the
+                collection after the gift has been scheduled?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa075f5184" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f5184" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">If you have scheduled a gift but it has not been sent yet, you
+                  have the option to make changes to the gift selection. Whether you want to switch to a different
+                  collection, choose an alternative item, or personalize the gift further, we're here to accommodate
+                  your preferences. Simply inform us about the changes you'd like to make before the scheduled delivery
+                  date, and we will ensure your updated gift reaches your recipient with care and thoughtfulness. With
+                  Gift On Schedule, we understand that life can be unpredictable, and we are committed to providing the
+                  flexibility you need to create the perfect gifting experience.</div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f5185" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f5185" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f5185">How long do I have to cancel a
+                scheduled gift?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa075f5185" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f5185" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">You have the flexibility to cancel a scheduled gift at any time
+                  before its status changes to "shipped." Whether you need to make last-minute changes or unforeseen
+                  circumstances arise, you can easily cancel the gift and make any necessary adjustments to ensure a
+                  thoughtful and timely gifting experience. At Gift On Schedule, we strive to provide you with the
+                  utmost convenience and peace of mind when it comes to managing your scheduled gifts.</div>
+              </div>
+            </div>
+
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-8fe6730e26db16f15763887c30a614caa075f5186" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-8fe6730e26db16f15763887c30a614caa075f5186" aria-expanded="false"
+                aria-controls="collapse-8fe6730e26db16f15763887c30a614caa075f5186">Is my personal and payment
+                information secure when using Gift On Schedule?</h2>
+              <div id="collapse-8fe6730e26db16f15763887c30a614caa076f5185" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-8fe6730e26db16f15763887c30a614caa075f5186" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">Yes, we take data security seriously. Your personal and payment
+                  information is protected through secure encryption and advanced security measures, ensuring a safe and
+                  trustworthy gifting experience.</div>
+              </div>
+            </div>
+
+            <div class="accordion-item p-1 mb-2">
+              <h2 class="accordion-header accordion-button h5 border-0 "
+                id="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd7" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd7" aria-expanded="false"
+                aria-controls="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd7">How does the system ensure that gifts
+                arrive on time for special occasions?</h2>
+              <div id="collapse-4b82be4be873c8ad699fa97049523ac86b67a8bd7" class="accordion-collapse collapse border-0 "
+                aria-labelledby="heading-4b82be4be873c8ad699fa97049523ac86b67a8bd7" data-bs-parent="#accordionFAQ">
+                <div class="accordion-body py-0 content">
+                  At Gift On Schedule, we take pride in our meticulous planning. We prepare all the gifts well in
+                  advance, approximately 12 days before the actual occasion. This allows us ample time to deliver them
+                  to any destination worldwide, utilizing cost-effective ground shipping options. For perishable items
+                  like flower arrangements that require quick delivery, we ensure next-day or even same-day
+                  shipping.<br><br>
+
+                  Scheduling your occasions ahead of time not only guarantees timely delivery but also helps you save
+                  money by avoiding last-minute expensive deals. Embrace the convenience of planning in advance with
+                  Gift On Schedule, and enjoy thoughtful gifting without the stress of rushed deliveries.
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section botm-bner">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-12">
+          <div class="botm_view_img">
+            <div class="btm-text overlay overlay_2">
+              <h1>Make it official with Gift On Schedule and become a gifting pro.</h1>
+              <h5>Start creating meaningful memories today!</h5>
+              <img src="images/txt-btm.png" class="btmimg"><br>
+              <a type="button" class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#applyLoan">Start
+                Gifting for Free<span style="font-size: 14px;" class="ms-2 fas fa-arrow-right"></span></a>
+            </div>
+
+            <img src="images/btmbnr.png">
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="section-sm bg-tertiary footer_desk">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <a href="javascript:void(0);">
+              <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">COMPANY</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#!">About Us</a>
+              </li>
+              <li class="mb-2"><a href="#!">Contact Us</a>
+              </li>
+              <li class="mb-2"><a href="#!">How it works?</a>
+              </li>
+              <li class="mb-2"><a href="#!">Terms of Use and Privacy Policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">PRODUCT</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="contact.html">Product Overview</a>
+              </li>
+              <li class="mb-2"><a href="faq.html">FAQs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">SALES AND SUPPORT</h5>
+            <h5 class="mb-4 text-primary font-secondary"><i class="fa fa-phone"></i> (888) 614-8218</h5>
+            <h5 class="mb-4 text-primary font-secondary">service@giftonschedule.com</h5>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-4 col-6 mb-4">
+          <div class="footer-widget">
+            <h5 class="mb-4 text-primary font-secondary">EXCISTING USERS</h5>
+            <a href="#!" class="btn btn-outline-primary">Log In</a><br><br>
+            <h5 class="mb-4 text-primary font-secondary">NEW USERS</h5>
+            <a href="#!" class="btn btn-outline-primary" style="margin-left:0px !important;">Sign Up</a>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- MOBILE FOOTER START -->
+
+  <footer class="mobile_footer_wrapper">
+    <div class="container">
+      <div class="row gx-2 gy-4">
+        <div class="col-6">
+          <a href="javascript:void(0);">
+            <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+          </a>
+        </div>
+        <div class="col-6">
+          <ul class="support_tm_mb">
+            <li>
+              <h5>SALES AND SUPPORT</h5>
+            </li>
+            <li>
+              <h5><i class="fa fa-phone"></i> (888) 614-8218</h5>
+            </li>
+            <li>
+              <h5>mail@mail.giftonschedule.com</h5>
+            </li>
+          </ul>
+
+
+
+        </div>
+        <div class="col-6">
+          <ul class="support_tm_mb">
+            <h4>Contact</h4>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">How It Works ?</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="support_tm_mb">
+            <h4>Product</h4>
+            <li>
+              <a href="#">Product Overview</a>
+            </li>
+            <li>
+              <a href="#">Faq's</a>
+            </li>
+            <li>
+              <a href="#">Pricing - Free</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="support_tm_mb">
+            <br>
+            <li>
+              <a href="#!">User agreement</a>
+            </li>
+            <li>
+              <a href="#!">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="support_tm_mb">
+            <h3>Become a vendor</h3>
+            <li>
+              <h6>Existing User</h6>
+              <a href="#!" class="btn">Login</a>
+            </li>
+            <li>
+              <h6>New Users</h6>
+              <a href="#!" class="btn">Register</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- # JS Plugins -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/slick/slick.min.js"></script>
+  <script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+    integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco=" crossorigin="anonymous"></script>
+  <script>
+    SmoothScroll({
+      // Время скролла 400 = 0.4 секунды
+      animationTime: 800,
+      // Размер шага в пикселях 
+      stepSize: 75,
+
+      // Дополнительные настройки:
+
+      // Ускорение 
+      accelerationDelta: 30,
+      // Максимальное ускорение
+      accelerationMax: 2,
+
+      // Поддержка клавиатуры
+      keyboardSupport: true,
+      // Шаг скролла стрелками на клавиатуре в пикселях
+      arrowScroll: 50,
+
+      // Pulse (less tweakable)
+      // ratio of "tail" to "acceleration"
+      pulseAlgorithm: true,
+      pulseScale: 4,
+      pulseNormalize: 1,
+
+      // Поддержка тачпада
+      touchpadSupport: true,
+    })
+  </script>
+  <script>
+    var autoStopperBtn = document.querySelectorAll('.auto-stop');
+
+    for (var i = 0; i < autoStopperBtn.length; i++)
+    {
+
+      (function (i)
+      {
+
+        autoStopperBtn[i].onclick = function ()
+        {
+
+          var autoStopperModule = autoStopperBtn[i].closest('.auto-stopper');
+
+          var autoStopperFrame = autoStopperModule.querySelector('iframe');
+
+          var autoStopperSrc = autoStopperFrame.src;
+
+          autoStopperFrame.src = '';
+
+          autoStopperFrame.src = autoStopperSrc;
+
+        }
+
+      }(i));
+
+    }
+
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function ()
+    {
+      const carouselItems = document.querySelectorAll('.carousel-item');
+      const carousel = document.getElementById('myCarousel');
+      const prevBtn = document.querySelector('.carousel-control-prev');
+      const nextBtn = document.querySelector('.carousel-control-next');
+      let currentItem = 0;
+      let startX;
+
+      // Show initial active item
+      carouselItems[currentItem].classList.add('active');
+
+      // Previous and Next button click handler
+      function handleNavigation(direction)
+      {
+        carouselItems[currentItem].classList.remove('active');
+        if (direction === 'next')
+        {
+          currentItem = (currentItem + 1) % carouselItems.length;
+        } else
+        {
+          currentItem = (currentItem - 1 + carouselItems.length) % carouselItems.length;
+        }
+        carouselItems[currentItem].classList.add('active');
+      }
+
+      // Touchstart event handler
+      carousel.addEventListener('touchstart', function (event)
+      {
+        startX = event.touches[0].clientX;
+      });
+
+      // Touchmove event handler
+      carousel.addEventListener('touchmove', function (event)
+      {
+        const currentX = event.touches[0].clientX;
+        const deltaX = startX - currentX;
+
+        if (deltaX > 0)
+        {
+          // Scrolling to the right (next)
+          handleNavigation('next');
+        } else if (deltaX < 0)
+        {
+          // Scrolling to the left (prev)
+          handleNavigation('prev');
+        }
+
+        startX = currentX;
+
+        // Prevent default touchmove behavior
+        event.preventDefault();
+      });
+
+      // Previous button click handler
+      prevBtn.addEventListener('click', function ()
+      {
+        handleNavigation('prev');
+      });
+
+      // Next button click handler
+      nextBtn.addEventListener('click', function ()
+      {
+        handleNavigation('next');
+      });
+    });
+
+  </script>
+
+</body>
+
+</html>
